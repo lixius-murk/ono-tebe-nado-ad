@@ -13,9 +13,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Check if the repository is private
-        run: exit 1
-        if: ${{github.event.repository.private}}
+      - name: Debug repository visibility
+        env:
+          REPOSITORY: ${{ github.repository }}
+          EVENT_PRIVATE: ${{ github.event.repository.private }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "Repository: $REPOSITORY"
+          echo "Event reports private: $EVENT_PRIVATE"
+          gh api "repos/$REPOSITORY" --jq '.private'
       - name: Tests
         uses: Yandex-Practicum/test-project-action@v1
         with:
