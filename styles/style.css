@@ -109,7 +109,7 @@
   border: 1px solid #fff;
   background: transparent;
   color: #fff;
-  font-family: inherit;
+  font-family: Raleway;
   font-size: 22px;
   text-transform: uppercase;
   cursor: pointer;
@@ -200,7 +200,7 @@
 }
 .about {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 334px 1fr;
   gap: 25px;
   padding: 180px 50px;
 }
@@ -242,11 +242,10 @@
 }
 
 .footer {
-  padding: 180px 50px 90px;
+  padding: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
-  gap: 30px;
 }
 
 .address {
