@@ -46,6 +46,8 @@ body {
   width: 1100px;
   margin: 0 auto;
   font-family: Raleway;
+  font-size: 18px;
+
 }
 .cover {
   position: relative;
@@ -156,6 +158,8 @@ body {
 .card {
   position: relative;
   height: 100%;
+  gap: 30px;
+
   min-height: 450px;
   padding: 50px 40px;
   display: flex;
@@ -200,6 +204,8 @@ body {
 .lots__look {
   display: block;
   width: fit-content;
+  text-transform: lowercase;
+
   margin: 30px 0 0 40px;
   color: #000;
   font-size: 20px;
@@ -210,7 +216,7 @@ body {
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  padding: 120px 25px 180px;
+  padding: 150px 25px 110px;
 }
 
 .about__logo {
@@ -254,6 +260,8 @@ body {
 
 .address {
   display: flex;
+  max-width: 242px;
+
   flex-direction: column;
   align-items: flex-start;
   font-style: normal;
