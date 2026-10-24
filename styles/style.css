@@ -49,7 +49,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
-  background: url("../images/cover.jpg") center / cover no-repeat;
+  background-image: url("../images/cover.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .overlay {
   position: absolute;
@@ -118,7 +121,7 @@ body {
 }
 
 .lots {
-  padding: 100px 50px 0;
+  padding: 180px 50px 0;
 }
 
 .lots__heading {
@@ -210,6 +213,11 @@ body {
   padding: 180px 50px;
 }
 
+.about__column {
+  display: flex;
+  flex-direction: column;
+}
+
 .about__logo {
   width: 240px;
   height: 240px;
@@ -233,12 +241,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-
-.about__logo-image {
-  width: 148px;
-  height: auto;
-}
-
 
 .about__text {
   display: flex;
