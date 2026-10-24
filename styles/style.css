@@ -1,23 +1,20 @@
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
-body {
-  width: 1100px;
-  margin: 0 auto;
-  font-family: Raleway, sans-serif;
-}
-
 .header {
-  min-height: 293px;
-  padding: 92px 50px;
+  min-height: 292px;
+  padding: 20px 50px;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
   align-items: center;
   gap: 30px;
+}
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
 }
 
 .header__logo {
@@ -35,17 +32,21 @@ body {
 }
 
 .header__address {
+  max-width: 242px;
+
   justify-self: end;
   display: flex;
   flex-direction: column;
-  font-style: normal;
   line-height: 1.4;
 }
-
 .main {
   width: 100%;
 }
-
+body {
+  width: 1100px;
+  margin: 0 auto;
+  font-family: Raleway;
+}
 .cover {
   position: relative;
   height: 757px;
@@ -56,7 +57,6 @@ body {
   color: #fff;
   background: url("../images/cover.jpg") center / cover no-repeat;
 }
-
 .overlay {
   position: absolute;
   inset: 0;
@@ -117,14 +117,14 @@ body {
   border: 1px solid #fff;
   background: transparent;
   color: #fff;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway;
   font-size: 22px;
   text-transform: uppercase;
   cursor: pointer;
 }
 
 .lots {
-  padding: 180px 50px 0;
+  padding: 100px 25px 0;
 }
 
 .lots__heading {
@@ -137,8 +137,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -203,13 +203,14 @@ body {
   margin: 30px 0 0 40px;
   color: #000;
   font-size: 20px;
+  position: relative;
+  z-index: 10;
 }
-
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  padding: 180px 50px;
+  padding: 120px 25px 180px;
 }
 
 .about__logo {
@@ -223,18 +224,18 @@ body {
   align-items: center;
 }
 
-.about__logo-image {
-  display: block;
-  width: 148px;
-  height: auto;
-}
-
 .about__title {
-  margin: 100px 0;
+  margin: 100px 0 80px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.about__logo-image {
+  width: 148px;
+  height: auto;
+}
+
 
 .about__text {
   display: flex;
