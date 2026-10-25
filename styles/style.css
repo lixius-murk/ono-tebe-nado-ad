@@ -8,7 +8,7 @@ a {
 }
 
 .header {
-  min-height: 292px;
+  min-height: 293px;
   padding: 20px 50px;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
@@ -131,7 +131,7 @@ body {
 }
 
 .lots {
-  padding: 230px 25px 0;
+  padding: 180px 25px 0;
 }
 
 .lots__heading {
